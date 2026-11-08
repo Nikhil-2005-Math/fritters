@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="ml">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>പഴംപൊരി | Pazhampori Global Enterprise - Dr. Aleena Jacob</title>
+
+  <!-- Google Fonts: Noto Sans Malayalam & Manjari for pristine Malayalam script -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Manjari:wght@400;700;900&family=Noto+Sans+Malayalam:wght@400;700;900&display=swap"
+    rel="stylesheet">
+
+  <!-- Design System & Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <!-- ========================================================================== -->
+  <!-- 1. TOP EXECUTIVE MARKET TICKER (Deadpan High-Finance Parody) -->
+  <!-- ========================================================================== -->
+  <div class="executive-ticker">
+    <div class="ticker-left">
+      <span class="ticker-badge">NASDAQ: $PZMP</span>
+      <span class="ticker-price">$428.50</span>
+      <span class="ticker-change">▲ +48.9% (+14.20)</span>
+      <span class="ticker-metric">| Q4 Global Fritter Yield: 14.8M Covers</span>
+      <span class="ticker-metric">| Founder: Dr. Aleena Jacob</span>
+      <span class="ticker-metric">| 182.5°C Fryer Lock</span>
+    </div>
+    <div class="ticker-right">
+      <span class="live-indicator"></span>
+      <span>PLANETARY FRITTER GRID: ONLINE</span>
+    </div>
+  </div>
+
+  <!-- ========================================================================== -->
+  <!-- 2. ENTERPRISE HEADER WITH MALAYALAM BRANDING & ORDER HISTORY -->
+  <!-- ========================================================================== -->
+  <header class="site-header">
+    <div class="header-container">
+      <div class="brand-identity" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
+        <div id="header-logo-container"></div>
+        <div class="brand-text">
+          <h1><span class="malayalam-primary-title">പഴംപൊരി</span> Global Enterprise</h1>
+          <span class="brand-tagline">Dr. Aleena Jacob Foundation • Planetary Fritter Logistics</span>
+        </div>
+      </div>
+
+      <nav>
+        <ul class="nav-links">
+          <li class="nav-item active" data-tab="hero" onclick="App.switchTab('hero')">📈 വീക്ഷണം (Vision)</li>
+          <li class="nav-item" data-tab="founder" onclick="App.switchTab('founder')">👩‍🔬 Dr. Aleena Jacob</li>
+          <li class="nav-item" data-tab="cart-showcase" onclick="App.switchTab('cart-showcase')">🛒 ഹൈപ്പർ കാർട്ട്</li>
+          <li class="nav-item" data-tab="order-terminal" onclick="App.switchTab('order-terminal')">🍌 ORDER HERE (Menu)
+          </li>
+          <li class="nav-item" data-tab="packaging-section" onclick="App.switchTab('packaging-section')">📦 ബ്രാൻഡഡ് കവർ
+          </li>
+          <li class="nav-item" data-tab="logistics" onclick="App.switchTab('logistics')">🌍 വിതരണ ശൃംഖല</li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button class="btn-header-orders" onclick="App.openOrderHistoryModal()" title="View Saved Orders & Invoices">
+          📋 ORDER HISTORY <span id="header-cart-count" class="cart-count-badge" style="display:none;">0</span>
+        </button>
+
+        <button id="sound-toggle-btn" class="sound-toggle-btn" title="Toggle Synthesized Audio FX">
+          🔊 Sound On
+        </button>
+
+        <button class="cta-order-btn" onclick="App.switchTab('order-terminal')">
+          ⚡ ORDER HERE
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ========================================================================== -->
+    <!-- 3. HERO / EXECUTIVE PITCH DECK SECTION -->
+    <!-- ========================================================================== -->
+    <section id="hero" class="hero-section">
+      <div class="hero-grid">
+        <div class="hero-left">
+          <div class="hero-eyebrow">
+            <span>🍌 GLOBAL BANANA FRITTER INFRASTRUCTURE</span>
+            <span>•</span>
+            <span>SERIES A PROSPECTUS</span>
+          </div>
+
+          <h2 class="hero-title">
+            ലോകമെമ്പാടും ശുദ്ധമായ <span class="malayalam-hero">പഴംപൊരി</span>,
+            ബ്രാൻഡഡ് കവറിൽ നിങ്ങളുടെ ഗേറ്റിലേക്ക്.
+          </h2>
+
+          <p class="hero-description">
+            <strong>പഴംപൊരി Global Enterprise</strong>, founded by <strong>Dr. Aleena Jacob</strong>,
+            is scaling Kerala's iconic heritage banana fritter worldwide.
+            Prepared in pure cold-pressed coconut oil or royal cow ghee, served in ventilated, heat-retentive
+            branded eco-covers with aligned logos, and delivered with sub-millisecond precision.
+          </p>
+
+          <div class="hero-stats-row">
+            <div class="stat-card">
+              <div class="stat-value gold">182.5°C</div>
+              <div class="stat-label">Optimal Frying Heat</div>
+              <div class="stat-sub">▲ 99.8% Crisp Factor</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-value">9 Varieties</div>
+              <div class="stat-label">Standard & Premium</div>
+              <div class="stat-sub">★ Chef Curated</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-value gold">&lt; 15 min</div>
+              <div class="stat-label">Doorstep / Gate Delivery</div>
+              <div class="stat-sub">⚡ Heat-Locked Cover</div>
+            </div>
+          </div>
+
+          <div class="hero-actions-group">
+            <button class="btn-primary-large" onclick="App.switchTab('order-terminal')">
+              <span>🍌 ഓർഡർ ചെയ്യുക (Procure Fritters)</span>
+            </button>
+            <button class="btn-secondary-large" onclick="App.switchTab('founder')">
+              <span>Meet Dr. Aleena Jacob</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="hero-right">
+          <div class="hero-showcase-card" onclick="App.testFritterAcoustics()" title="Click to test Acoustic Crunch!">
+            <span class="card-badge-top">ലോഗോ പതിച്ച ഒഫീഷ്യൽ കവർ (Click to Test Crunch)</span>
+            <div id="hero-cover-container"></div>
+            <h3 style="font-size:16px; font-weight:800; color:#0F172A; margin-top:12px;">
+              ഔദ്യോഗിക ബ്രാൻഡഡ് കവർ (Eco-Pouch)
+            </h3>
+            <p style="font-size:12px; color:#64748B; max-width:280px; margin:4px auto 0;">
+              Dr. Aleena Jacob certified ventilation cover. Maintains crisp outer crust at 78 dB crunch without soggy
+              oil absorption.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================== -->
+    <!-- 4. FOUNDER SECTION: DR. ALEENA JACOB WITH FUNNY PAZHAMFORI FRAME -->
+    <!-- ========================================================================== -->
+    <section id="founder" class="founder-section">
+      <div class="section-header-centered">
+        <span class="section-badge">നേതൃത്വം & ശാസ്ത്രീയ അടിത്തറ</span>
+        <h3 class="section-title">സ്ഥാപക: Dr. Aleena Jacob</h3>
+        <p class="section-subtitle">
+          Founder, Chief Executive Scientist & Pioneer of Planetary Banana Fritter Logistics.
+        </p>
+      </div>
+
+      <div class="founder-card">
+        <!-- The Funny Pazhampori Frame Mount (No Frontend Upload Button - Loads from Backend) -->
+        <div id="founder-photo-container">
+          <!-- Rendered by Graphics.renderFunnyPazhamporiFrame -->
+        </div>
+
+        <!-- Founder Bio & Serious Corporate Vision Statement -->
+        <div class="founder-details">
+          <h3>Dr. Aleena Jacob</h3>
+          <span class="founder-title-badge">സ്ഥാപക & ചീഫ് എക്സിക്യൂട്ടീവ് ഓഫീസർ (Founder & CEO)</span>
+
+          <p class="founder-statement">
+            "Growing up in Kerala, I realized that the humble Pazhampori is not merely an evening snack with black tea;
+            it is a masterclass in culinary thermodynamics. Our mission at Pazhampori Global Enterprise
+            is to institutionalize this gold standard: organic Wayanad Nendran bananas, precision frying in pure coconut
+            oil or Kasaragod ghee,
+            and temperature-locked delivery in our signature branded cover directly to every citizen's gate."
+          </p>
+
+          <div class="founder-credentials-strip">
+            <span class="cred-pill">🎓 Ph.D. in Confectionery Thermodynamics</span>
+            <span class="cred-pill">🍌 Wayanad Banana Agricultural Fellowship</span>
+            <span class="cred-pill">🛡️ Kerala Banana Board Chairman Honor 2026</span>
+            <span class="cred-pill">📜 ISO-9001 Fritter Seal Quality Standard</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================== -->
+    <!-- 5. CARTOON LARGE CART SECTION: "പഴംപൊരി" WITH INTERACTIVE CONTROLS -->
+    <!-- ========================================================================== -->
+    <section id="cart-showcase" class="cart-showcase-section">
+      <div class="section-header-centered">
+        <span class="section-badge">HIGH-TECH STREET CART INFRASRTUCTURE</span>
+        <h3 class="section-title">The Hyper-Cart 9000™</h3>
+        <p class="section-subtitle">
+          Our mobile cart fleet features live solar frying urulis, ripe banana racks,
+          branded cover packaging tables, and authentic illuminated Malayalam marquee signage:
+          <strong style="color: #D97706; font-size: 20px;">"പഴംപൊരി"</strong>.
+        </p>
+      </div>
+
+      <div class="interactive-cart-card">
+        <div class="cart-interactive-hint">
+          <span>💡 Interactive Cart: Click elements below or on the cart to test systems!</span>
+        </div>
+
+        <div id="large-cart-canvas-mount" class="cart-canvas-mount"></div>
+
+        <div class="cart-controls-strip">
+          <button class="cart-action-pill" onclick="App.triggerCartSizzle()">
+            <span>🔥 Boil Coconut Oil Uruli (Sizzle)</span>
+          </button>
+          <button class="cart-action-pill" onclick="App.triggerBananaShake()">
+            <span>🍌 Shake Wayanad Bananas (Crunch)</span>
+          </button>
+          <button class="cart-action-pill" onclick="App.triggerBellRing()">
+            <span>🔔 Ring Counter Bell (Ting!)</span>
+          </button>
+          <button class="cart-action-pill" onclick="App.switchTab('order-terminal')">
+            <span>🛒 Order Directly From This Cart</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================== -->
+    <!-- 6. ORDER PROCUREMENT TERMINAL (STANDARD & PREMIUM VARIETIES) -->
+    <!-- ========================================================================== -->
+    <section id="order-terminal" class="order-section">
+      <div class="section-header-centered">
+        <span class="section-badge">LIVE ORDER PLATFORM</span>
+        <h3 class="section-title">പഴംപൊരി മെനു (Standard & Premium Varieties)</h3>
+        <p class="section-subtitle">
+          Choose from classic traditional recipes or royal luxury reserves, customized to your preference and delivered
+          in branded covers.
+        </p>
+      </div>
+
+      <div class="menu-filter-bar">
+        <button class="filter-pill-btn active" data-filter="all" onclick="App.filterCatalog('all')">
+          എല്ലാം (All 9 Varieties)
+        </button>
+        <button class="filter-pill-btn" data-filter="standard" onclick="App.filterCatalog('standard')">
+          STANDARD പഴംപൊരി (Standard)
+        </button>
+        <button class="filter-pill-btn" data-filter="premium" onclick="App.filterCatalog('premium')">
+          ★ PREMIUM പഴംപൊരി (Premium Reserves)
+        </button>
+      </div>
+
+      <div class="order-layout-grid">
+        <div class="catalog-container" id="catalog-list"></div>
+
+        <!-- Checkout Terminal & Gate Delivery Setup -->
+        <div class="order-checkout-panel">
+          <div class="panel-header">
+            <h3 class="panel-title">FULFILLMENT TERMINAL</h3>
+            <span class="terminal-badge">LIVE POS #042</span>
+          </div>
+
+          <div class="mode-toggle-group">
+            <label class="toggle-label">1. ഡെലിവറി രീതി തിരഞ്ഞെടുക്കുക</label>
+            <div class="mode-buttons-pair">
+              <div class="btn-mode active" data-mode="ONLINE" onclick="App.setDeliveryMode('ONLINE')">
+                <span class="mode-title">🚀 ONLINE DELIVERY</span>
+                <span class="mode-desc">നിങ്ങളുടെ ഗേറ്റിലേക്ക് (Direct to Gate)</span>
+              </div>
+              <div class="btn-mode" data-mode="OFFLINE" onclick="App.setDeliveryMode('OFFLINE')">
+                <span class="mode-title">🏬 ഹൈപ്പർ കാർട്ട് ഡ്രൈവ്-ത്രൂ</span>
+                <span class="mode-desc">കാർട്ടിൽ നിന്നും നേരിട്ട് വാങ്ങുക</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-field-group">
+            <label class="form-label" for="cust-name">ഉപഭോക്താവിന്റെ പേര് (Customer Name)</label>
+            <input type="text" id="cust-name" class="form-input" placeholder="e.g. Rahul Nair / Priya Thomas"
+              value="Rahul Nair">
+          </div>
+
+          <div class="form-field-group">
+            <label class="form-label" for="cust-phone">ഫോൺ നമ്പർ (Phone Number)</label>
+            <input type="text" id="cust-phone" class="form-input" placeholder="+91 98470 12345" value="+91 98470 12345">
+          </div>
+
+          <div class="form-field-group">
+            <label class="form-label" for="cust-gate">
+              <span>ഗേറ്റ് / ലാൻഡ്മാർക്ക് (Your Gate / Landmark)</span>
+              <span style="color:#DC2626; font-weight:800;">*For Gate Cancel Lockout</span>
+            </label>
+            <input type="text" id="cust-gate" class="form-input" placeholder="e.g. Green Valley Main Gate 2"
+              value="Green Valley Main Gate 2">
+          </div>
+
+          <div class="form-field-group">
+            <label class="form-label" for="cust-address">മേൽവിലാസം (Delivery Address)</label>
+            <input type="text" id="cust-address" class="form-input" placeholder="Flat 4B, Emerald Heights, MG Road"
+              value="Flat 4B, Emerald Heights">
+          </div>
+
+          <div class="form-field-group">
+            <label class="form-label" for="country-select">
+              <span>രാജ്യം (Country)</span>
+              <span style="color:#059669; font-weight:700;">● Active Grid</span>
+            </label>
+            <select id="country-select" class="form-select"></select>
+          </div>
+
+          <div class="form-field-group">
+            <label class="form-label" for="district-select">
+              <span>ജില്ല / പ്രദേശം (District Node)</span>
+            </label>
+            <select id="district-select" class="form-select"></select>
+          </div>
+
+          <div class="delivery-eta-card">
+            <div class="eta-left">
+              <span class="eta-icon">⏱️</span>
+              <div>
+                <div class="eta-label">പ്രതീക്ഷിക്കുന്ന ഡെലിവറി സമയം</div>
+                <div class="eta-time" id="eta-time-display">4 mins</div>
+              </div>
+            </div>
+            <span class="eta-tag" id="eta-hub-display">Beach Road Hyper-Oil Terminal</span>
+          </div>
+
+          <div class="order-summary-box">
+            <div class="summary-items-scroll" id="order-summary-items"></div>
+            <div class="summary-row">
+              <span>സബ്‌ടോട്ടൽ (Subtotal)</span>
+              <span id="summary-subtotal">₹0</span>
+            </div>
+            <div class="summary-row">
+              <span>ലോഗോ പതിച്ച ബ്രാൻഡഡ് കവർ</span>
+              <span style="color:#059669;">സൗജന്യം (FREE)</span>
+            </div>
+            <div class="summary-row">
+              <span>ഗേറ്റ് ഡെലിവറി ചാർജ്ജ്</span>
+              <span id="summary-delivery-fee">₹15</span>
+            </div>
+            <div class="summary-row">
+              <span>കേരള ബനാന സെസ് (5%)</span>
+              <span id="summary-tax">₹2</span>
+            </div>
+            <div class="summary-row total-row">
+              <span>ആകെ തുക (Total Amount)</span>
+              <span id="summary-total-price" style="color:#D97706; font-size:18px;">₹0</span>
+            </div>
+          </div>
+
+          <button class="btn-checkout-submit" onclick="App.placeOrder()">
+            <span>🍌 ഓർഡർ സ്ഥിരീകരിക്കുക (Place Order)</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================== -->
+    <!-- 7. BRANDED COVER & PACKAGING SHOWCASE GALLERY -->
+    <!-- ========================================================================== -->
+    <section id="packaging-section" class="logistics-section">
+      <div class="section-header-centered">
+        <span class="section-badge">ഗുണനിലവാരമുള്ള പാക്കിംഗ്</span>
+        <h3 class="section-title">ബ്രാൻഡഡ് കവറിന്റെ പ്രത്യേകതകൾ (Branded Eco-Cover)</h3>
+        <p class="section-subtitle">
+          Engineered under the supervision of Dr. Aleena Jacob with perfectly aligned logo, Malayalam lettering, and
+          thermal retention.
+        </p>
+      </div>
+
+      <div
+        style="background:#FFFFFF; border:2px solid #FDE68A; border-radius:18px; padding:32px; display:grid; grid-template-columns:1fr 1fr; gap:36px; align-items:center;">
+        <div style="text-align:center;" id="packaging-gallery-mount"></div>
+
+        <div>
+          <h4 style="font-size:22px; font-weight:900; color:#0F172A; margin-bottom:12px;">
+            ലോഗോയും പേരും കൃത്യമായി ക്രമീകരിച്ച ബ്രാൻഡഡ് കവർ
+          </h4>
+          <p style="font-size:13.5px; color:#64748B; line-height:1.6; margin-bottom:16px;">
+            Every single Pazhampori leaves our cart wrapped inside this custom food-grade kraft cover.
+            The cover features our golden banana seal, the authentic Malayalam inscription
+            <strong>"പഴംപൊരി"</strong> aligned directly in the center, and the certification stamp of the
+            <strong>Dr. Aleena Jacob Foundation</strong>.
+          </p>
+
+          <div style="background:#FFFDF5; border:1px solid #FEF08A; border-radius:8px; padding:16px;">
+            <ul style="font-size:12.5px; color:#78350F; list-style:none; line-height:1.8;">
+              <li>✓ <strong>Micro-Ventilation Slits:</strong> Lets excess steam escape so the outer crust never turns
+                soggy.</li>
+              <li>✓ <strong>Greaseproof Kraft Membrane:</strong> Zero oil stains on your fingers or corporate shirts.
+              </li>
+              <li>✓ <strong>Heat Reflection Layer:</strong> Keeps core banana molten sweet at 94°C for over 25 minutes.
+              </li>
+              <li>✓ <strong>100% Biodegradable:</strong> Decomposes naturally into organic soil nutrients.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================== -->
+    <!-- 8. GLOBAL REACH & DISTRICTS TABLE -->
+    <!-- ========================================================================== -->
+    <section id="logistics" class="logistics-section">
+      <div class="section-header-centered">
+        <span class="section-badge">ആഗോള വിതരണ ശൃംഖല</span>
+        <h3 class="section-title">രാജ്യങ്ങളും ജില്ലകളും (Available Countries & Districts)</h3>
+        <p class="section-subtitle">
+          Real-time delivery timetable for our active hubs with exact minute estimations.
+        </p>
+      </div>
+
+      <div class="logistics-grid">
+        <div class="logistics-card">
+          <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px;">
+            <h4 style="font-size:18px; font-weight:800;">ജില്ലാ തിരിച്ചുള്ള സമയം (Timetable)</h4>
+            <div style="width:200px;">
+              <select id="logistics-country-select" class="form-select"></select>
+            </div>
+          </div>
+
+          <div class="districts-table-container">
+            <table class="districts-table">
+              <thead>
+                <tr>
+                  <th>District / Hub</th>
+                  <th>Delivery ETA</th>
+                  <th>Hyper-Cart Node</th>
+                  <th>Status</th>
+                  <th>Radius</th>
+                </tr>
+              </thead>
+              <tbody id="districts-table-body"></tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="logistics-card" style="display:flex; flex-direction:column; justify-content:space-between;">
+          <div>
+            <h4 style="font-size:18px; font-weight:800; margin-bottom:8px;">The Gate Delivery Guarantee</h4>
+            <p style="font-size:13px; color:var(--text-muted); line-height:1.6; margin-bottom:16px;">
+              Our dedicated delivery boys and automated drone capsules are GPS-calibrated to deliver right to your
+              specific gate.
+              You can cancel your order at any point during frying and transit—<strong>until the delivery boy approaches
+                your gate</strong>.
+              Once the rider is within 50 meters of your gate, cancellation is legally locked to ensure zero food
+              wastage!
+            </p>
+
+            <div
+              style="background:#FFFBEB; border:1px solid #FEF08A; border-radius:8px; padding:16px; margin-bottom:16px;">
+              <h5 style="color:#78350F; font-size:13px; font-weight:900; margin-bottom:4px;">GATE PROTOCOL POLICY:</h5>
+              <p style="font-size:12px; color:#92400E;">
+                "Hot Pazhampori arriving at your gate must be welcomed with respect and consumed with piping hot tea or
+                Sulaimani."
+                <br><em>— Dr. Aleena Jacob, Executive Order #42</em>
+              </p>
+            </div>
+          </div>
+
+          <div
+            style="display:flex; gap:12px; align-items:center; background:#F8FAFC; border:1px solid #E2E8F0; padding:12px; border-radius:8px;">
+            <span style="font-size:24px;">🛡️</span>
+            <div style="font-size:11.5px; color:var(--text-muted);">
+              <strong>Kerala Banana Board Compliance:</strong> ISO-9001:2026 Certified. Zero palm oil, 100% authentic
+              crispness.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========================================================================== -->
+  <!-- 9. MODAL 1: ANIMATED BOY PACKAGING IN BRANDED COVER -->
+  <!-- ========================================================================== -->
+  <div id="order-animation-modal" class="modal-overlay">
+    <div class="animation-modal-content">
+      <div class="modal-header-strip">
+        <span id="modal-order-id">ORDER #PZP-8492 • PACKAGING IN BRANDED COVER</span>
+        <span style="color:#10B981;">● 182°C FRYER LOCK</span>
+      </div>
+
+      <div class="modal-body">
+        <div id="modal-animation-stage" class="animation-stage-container"></div>
+
+        <div class="animation-status-box">
+          <div class="status-step-title" id="modal-status-title">Preparing Fritter...</div>
+          <div class="status-step-desc" id="modal-status-desc">Initializing thermal cover sequence...</div>
+        </div>
+
+        <div class="modal-action-buttons">
+          <button class="btn-cancel-fritter-order" onclick="App.initiateCancellation()">
+            <span>⚠️ ഓർഡർ റദ്ദാക്കുക (Cancel Order)</span>
+          </button>
+          <button class="btn-track-order" onclick="App.closeModal('order-animation-modal'); App.openTrackingModal();">
+            <span>🚀 Track Live Delivery to Gate</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================================== -->
+  <!-- 10. MODAL 2: LIVE DELIVERY JOURNEY TRACKER & GATE DISTANCE LOCKOUT -->
+  <!-- ========================================================================== -->
+  <div id="order-tracking-modal" class="modal-overlay">
+    <div class="animation-modal-content" style="max-width:680px;">
+      <div class="modal-header-strip">
+        <span>🚀 ലൈവ് ഗേറ്റ് ട്രാക്കർ (LIVE GATE DELIVERY TRACKER)</span>
+        <span style="cursor:pointer;" onclick="App.closeModal('order-tracking-modal')">✖ CLOSE</span>
+      </div>
+
+      <div class="tracking-card-body">
+        <div class="tracking-gate-header">
+          <div>
+            <div style="font-size:11px; text-transform:uppercase; font-weight:800; color:#854D0E;">ടാർഗെറ്റ് ഗേറ്റ്
+              (Target Gate)</div>
+            <div class="gate-highlight-name" id="tracking-gate-name">Main Gate Entrance</div>
+            <div id="gate-status-tag" style="font-size:11.5px; font-weight:700; color:#854D0E; margin-top:2px;">
+              Dispatched from Hub</div>
+          </div>
+          <div style="text-align:right;">
+            <div style="font-size:11px; text-transform:uppercase; font-weight:800; color:#854D0E;">ഗേറ്റിലേക്കുള്ള ദൂരം
+              (Distance)</div>
+            <div class="tracking-distance-counter" id="tracking-distance-text">1,800 meters away</div>
+          </div>
+        </div>
+
+        <div class="tracking-progress-bar-container">
+          <div class="tracking-progress-track">
+            <div class="tracking-progress-fill" id="tracking-bar-fill"></div>
+          </div>
+
+          <div class="tracking-steps-nodes">
+            <div class="tracking-step-node completed" data-step-val="0">
+              <div class="node-icon-circle">🍳</div>
+              <span>182°C Oil Fry</span>
+            </div>
+            <div class="tracking-step-node completed" data-step-val="25">
+              <div class="node-icon-circle">📦</div>
+              <span>Cover Packed</span>
+            </div>
+            <div class="tracking-step-node current" data-step-val="50">
+              <div class="node-icon-circle">🛵</div>
+              <span>Dispatched</span>
+            </div>
+            <div class="tracking-step-node" data-step-val="75">
+              <div class="node-icon-circle">🏃</div>
+              <span>Near Gate</span>
+            </div>
+            <div class="tracking-step-node" data-step-val="90">
+              <div class="node-icon-circle">🚪</div>
+              <span>At Your Gate!</span>
+            </div>
+          </div>
+        </div>
+
+        <div id="cancel-lockout-notice" class="cancel-lockout-banner"></div>
+
+        <div
+          style="display:flex; justify-content:space-between; align-items:center; margin-top:24px; border-top:1px solid #E2E8F0; padding-top:16px;">
+          <button id="btn-gate-cancel" class="btn-cancel-fritter-order" onclick="App.initiateCancellation()">
+            <span>⚠️ Cancel Order</span>
+          </button>
+
+          <button class="btn-track-order" onclick="App.closeModal('order-tracking-modal')">
+            <span>Continue Browsing</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================================== -->
+  <!-- 11. MODAL 3: RAGEBAITING & GUILT-TRIP CANCEL DIALOG -->
+  <!-- ========================================================================== -->
+  <div id="ragebait-modal" class="modal-overlay">
+    <div class="animation-modal-content ragebait-box">
+      <div class="modal-header-strip ragebait-siren-header">
+        <span id="rage-title">🚨 ETHICAL WARNING: PAZHAMFORI CANCELLATION DETECTED</span>
+        <span>ALERT LEVEL: RED</span>
+      </div>
+
+      <div class="modal-body">
+        <div style="font-size:48px; margin-bottom:12px;">😱🍌💔</div>
+
+        <div class="ragebait-dialog-text" id="rage-dialog-text"></div>
+
+        <div class="ragebait-stats">
+          <div class="ragebait-metric">
+            <div class="rage-val" id="rage-stat-1">1</div>
+            <div class="rage-lbl" id="rage-lbl-1">Banana Disrespected</div>
+          </div>
+          <div class="ragebait-metric">
+            <div class="rage-val" id="rage-stat-2">14</div>
+            <div class="rage-lbl" id="rage-lbl-2">Wayanad Farmers Crying</div>
+          </div>
+          <div class="ragebait-metric">
+            <div class="rage-val" id="rage-stat-3">-0.004%</div>
+            <div class="rage-lbl" id="rage-lbl-3">Kerala GDP Impact</div>
+          </div>
+        </div>
+
+        <div style="display:flex; flex-direction:column; gap:12px; margin-top:20px;">
+          <button id="btn-rage-repent" class="btn-repent">
+            I Repent! Keep My Pazhampori Safe!
+          </button>
+
+          <button id="btn-rage-insist" class="btn-insist-cancel" onmouseover="App.dodgeCancelButton()">
+            I Still Want To Cancel...
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================================== -->
+  <!-- 12. MODAL 4: CANCELLATION RETURN ANIMATION SCREEN -->
+  <!-- ========================================================================== -->
+  <div id="cancelled-return-modal" class="modal-overlay">
+    <div class="animation-modal-content" style="border-color:#DC2626;">
+      <div class="modal-header-strip" style="background:#7F1D1D; color:#FEE2E2;">
+        <span id="cancel-order-tag">ORDER TERMINATED • EMERGENCY LOCKDOWN</span>
+        <span>STATUS: DE-CRISPED</span>
+      </div>
+
+      <div class="modal-body">
+        <div id="cancel-return-stage" class="animation-stage-container"></div>
+
+        <div class="animation-status-box" style="background:#FFF1F2; border-color:#FECDD3;">
+          <div class="status-step-title" style="color:#991B1B;">Branded Cover Snatched Back into Cryogenic Storage</div>
+          <div class="status-step-desc" id="cancel-desc-text" style="color:#881337;">
+            The delivery boy has confiscated the branded cover and locked it away in deep sorrow.
+          </div>
+        </div>
+
+        <div class="modal-action-buttons">
+          <button class="btn-primary-large" onclick="App.resetAfterCancellation()" style="background:#0F172A;">
+            <span>🙏 Apologize & Re-Order Pazhampori</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================================== -->
+  <!-- 13. MODAL 5: SAVED ORDERS HISTORY -->
+  <!-- ========================================================================== -->
+  <div id="order-history-modal" class="modal-overlay">
+    <div class="animation-modal-content" style="max-width:640px;">
+      <div class="modal-header-strip">
+        <span>📋 നിങ്ങളുടെ ഓർഡർ ചരിത്രം (SAVED ORDER HISTORY)</span>
+        <span style="cursor:pointer;" onclick="App.closeModal('order-history-modal')">✖ ക്ലോസ്</span>
+      </div>
+
+      <div class="modal-body" style="text-align:left;">
+        <div class="saved-orders-container" id="history-orders-list"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================================== -->
+  <!-- 14. FOOTER -->
+  <!-- ========================================================================== -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <h3><span style="font-family:'Noto Sans Malayalam'; color:#F59E0B;">പഴംപൊരി</span> Global Enterprise</h3>
+          <p>
+            Founded by <strong>Dr. Aleena Jacob</strong>. The world's premier banana fritter logistics infrastructure.
+            Deploying high-velocity caramelised Ethakka assets at planetary scale with sub-millisecond oil draining.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Pazhampori Varieties</h4>
+          <ul>
+            <li onclick="App.filterCatalog('standard'); App.switchTab('order-terminal');">Classic Kerala Pazhampori</li>
+            <li onclick="App.filterCatalog('standard'); App.switchTab('order-terminal');">Crispy Street-Cut Fritter</li>
+            <li onclick="App.filterCatalog('premium'); App.switchTab('order-terminal');">Royal Cow-Ghee Reserve</li>
+            <li onclick="App.filterCatalog('premium'); App.switchTab('order-terminal');">24K Gold Leaf & Honey</li>
+            <li onclick="App.filterCatalog('premium'); App.switchTab('order-terminal');">Malabar Beef-Roast Stuffed</li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Global Hubs</h4>
+          <ul>
+            <li onclick="App.switchTab('logistics')">Kerala Central Grid (Kochi)</li>
+            <li onclick="App.switchTab('logistics')">Gulf Outpost (Dubai Deira)</li>
+            <li onclick="App.switchTab('logistics')">European Command (London)</li>
+            <li onclick="App.switchTab('logistics')">Americas Node (New York)</li>
+            <li onclick="App.switchTab('logistics')">Asia-Pacific (Singapore)</li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Governance & Quality</h4>
+          <ul>
+            <li>Dr. Aleena Jacob Charter</li>
+            <li>Kerala Banana Board Seal</li>
+            <li>Gate Delivery Regulations</li>
+            <li>Anti-Cancellation Protocol</li>
+            <li>Eco-Cover Kraft Standards</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          © 2026 പഴംപൊരി Global Enterprise Inc. All rights reserved. Registered under the Dr. Aleena Jacob Foundation.
+        </div>
+        <div style="font-family:'Noto Sans Malayalam'; font-size:13px; color:#F59E0B;">
+          പഴംപൊരി - കേരളത്തിന്റെ അഭിമാനം, ലോകത്തിന്റെ ആവേശം.
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="sound.js"></script>
+  <script src="graphics.js"></script>
+  <script src="app.js"></script>
+
+</body>
+
+</html>

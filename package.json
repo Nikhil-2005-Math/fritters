@@ -1,0 +1,18 @@
+{
+  "name": "pazhampori-global-enterprise",
+  "version": "1.0.0",
+  "description": "Pazhampori Global Inc. - Planetary Fritter Logistics & Shawarma-Wrapped Banana Technology",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": [
+    "pazhampori",
+    "banana-fritters",
+    "shawarma-wrap",
+    "kerala-tech",
+    "global-logistics"
+  ],
+  "author": "Pazhampori Global Inc.",
+  "license": "MIT"
+}
